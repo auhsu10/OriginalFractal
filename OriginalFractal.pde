@@ -63,11 +63,11 @@ public void draw(){
 }
 
 public void keyPressed(){
-  if(key=='a' && limit>0.55){
+  if((key=='a'||key=='A')&& limit>0.55){
     limit-=0.1;
     level-=1;
   }
-  if(key=='d' && limit<0.75){
+  if((key=='d'||key=='D')&& limit<0.75){
     limit+=0.1;
     level+=1;
   }
