@@ -1,5 +1,4 @@
 public double limit=0.75;
-public double time=0;
 public int level=3;
 public void setup(){
   size(600,600);
@@ -9,7 +8,6 @@ public void setup(){
 }
 
 public void draw(){
-  time+=0.016;
   fractal(300,300,720);
   strokeWeight(2);
   line(0,100,295,295);
@@ -56,8 +54,7 @@ public void draw(){
   fill(255);
   textSize(25);
   textAlign(CENTER);
-  text("Time: "+(int)time+" seconds",175,38);
-  text("Tunnel Mode: "+(int)level,425,38);
+  text("Tunnel Mode: "+(int)level,300,38);
   text("Mouse X: "+mouseX,150,575);
   text("Mouse Y: "+mouseY,450,575);
 }
