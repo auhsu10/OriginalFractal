@@ -56,8 +56,10 @@ public void draw(){
   fill(255);
   textSize(25);
   textAlign(CENTER);
-  text("Time: "+(int)time+" seconds",175,35);
-  text("FOV Level: "+(int)level,425,35);
+  text("Time: "+(int)time+" seconds",175,38);
+  text("Tunnel Mode: "+(int)level,425,38);
+  text("Mouse X: "+mouseX,150,575);
+  text("Mouse Y: "+mouseY,450,575);
 }
 
 public void keyPressed(){
